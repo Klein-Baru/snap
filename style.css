@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    max-width: 90%;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding-top: 2rem;
+}
+
+.logo{
+    height: 25px;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar{
+    display:flex;
+    margin-left: 5rem;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar li{
+    padding-right: 2rem;
+    position:relative;
+}
+
+
+.nav-link{
+    color:#000;
+}
+
+.nav-links:hover {
+    cursor:pointer;
+}
+
+.nav-link:nth-of-type(8){
+    border: 1px solid black;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+    /*margin-left: 3rem;*/
+}
+
+.nav-link:nth-of-type(7){
+    margin-left: auto;
+}
+
+.list-item{
+    margin-left: 1rem;
+}
+
+/* Styles the hamburger */
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+/* Style the main section */
+
+.main-section {
+    display: grid;
+    grid-template-areas:
+    "heading image"
+    "text image"
+    "button image"
+    "logos image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px 40px;
+    margin-top: 4rem;
+    margin-left: 12rem;
+
+}
+/* background-color: hsl(0, 0%, 98%); */
+
+h3 {
+    grid-area: heading;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 5rem;
+    width: 80%;
+
+}
+
+p {
+    grid-area: text;
+    font-size: 18px;
+    line-height: 1.8rem;
+    width: 30rem;
+}
+
+button {
+    grid-area: button;
+    background-color: #000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 18px;
+    border: none;
+    width:150px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #FFF;
+    color: black;
+    border: 2px solid black;
+}
+
+.desktop {
+    grid-area: image;
+    width: 25rem;
+    margin-left: 1rem;
+}
+
+.main-logos {
+    grid-area: logos;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+
+.logo-main {
+    height:20px;
+}
+
+.container{
+    display:none;
+}
